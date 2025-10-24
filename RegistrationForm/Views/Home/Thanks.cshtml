@@ -1,0 +1,20 @@
+﻿@model RegistrationForm.Models.Student 
+@{
+    ViewData["Title"] = "Thanks";
+}
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Thanks</h1>
+<p>Your registration was successful!</p>
+    <p>Here are the details you submitted:</p>
+    <ul>
+        <li><strong>ID:</strong> @Model.Id</li>
+        <li><strong>Name:</strong> @Model.Name</li>
+        <li><strong>Email:</strong> @Model.email</li>
+        <li><strong>Phone:</strong> @Model.phone</li>
+        <li><strong>Has Graduate Degree:</strong> @(Model.hasGraduate ? (Model.hasGraduate ? "Yes" : "No") : "Not specified")</li>
+    </ul>
+</body>
+</html>
